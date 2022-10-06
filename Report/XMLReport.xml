@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.306">
+    <testcase classname="To test the functionality of Content Management Modul" name="User is able to add topic" time="0.039">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is able to login and redirect to dashboard.......................undefined
+]]></failure>
+    </testcase>
+</testsuite>
