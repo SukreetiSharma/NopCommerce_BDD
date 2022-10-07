@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.306">
-    <testcase classname="To test the functionality of Content Management Modul" name="User is able to add topic" time="0.039">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is able to login and redirect to dashboard.......................undefined
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.503">
+    <testcase classname="To test the functionality of Content Management Module" name="User is able to search Message Template" time="25.168">
+        <failure message="Cannot invoke &quot;Pages.LogoutPage.ableToLogout()&quot; because the return value of &quot;PageFactory.PageFactory.getLogout()&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given User is able to login and redirect to dashboard.......................passed
+When select Message Template and search Message Template....................passed
+Then Verify Message Template................................................failed
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "Pages.LogoutPage.ableToLogout()" because the return value of "PageFactory.PageFactory.getLogout()" is null
+	at StepDefinitaion.SearchMessageTemplate.verify_message_template(SearchMessageTemplate.java:22)
+	at ✽.Verify Message Template(file:///C:/Users/SukreetiSharma/Documents/GitHub/NopCommerce_ContentManagementModule/src/test/java/Features/ContentManagement.feature:6)
 ]]></failure>
     </testcase>
 </testsuite>

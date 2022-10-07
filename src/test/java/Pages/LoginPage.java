@@ -13,6 +13,7 @@ public class LoginPage extends BaseClass {
     WebDriverWait wait;
     By Login = By.xpath("//button");
     By Dashboard = By.xpath("//p[contains(text(),' Dashboard')]");
+    By ContentManagement = By.xpath("//p[contains(text(), 'Content management')]");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -22,6 +23,7 @@ public class LoginPage extends BaseClass {
     public void LoginToDashboard() throws IOException {
         driver.findElement(Login).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(Dashboard));
+        driver.findElement(ContentManagement).click();
     }
 
 }
